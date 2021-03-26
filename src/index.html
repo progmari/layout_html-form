@@ -10,49 +10,101 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST">
+      method="POST"
+    >
       <fieldset>
         <legend>Personal information</legend>
-        <lable class="lable" for="surname">
+        <lable
+          class="lable"
+          for="surname"
+        >
           Surname:
-          <input type="text"
-          id="surname" required>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+          >
         </lable>
-        <lable class="lable" for="name">
+        <lable
+          class="lable"
+          for="name">
           Name:
-          <input type="text"
-          id="name" required>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+          >
         </lable>
-        <lable class="lable" for="age">
+        <lable
+          class="lable"
+          for="age"
+        >
           How old are You?
-          <input type="number" id="age"
-          value="12" min="1"
-          max="100" required>
+          <input
+            type="number"
+            id="age"
+            value="12"
+            min="1"
+            max="100"
+            name="age"
+            required
+          >
         </lable>
-        <lable class="lable" for="birth">
+        <lable
+          class="lable"
+          for="birth"
+        >
           Full date of birth:
-          <input type="date" name="birth"
-          id="birth" required>
+          <input
+            type="date"
+            name="birth"
+            id="birth"
+            required
+          >
         </lable>
-        <lable class="lable" for="accept">
+        <lable
+          class="lable"
+          for="accept"
+        >
           I accept the term of the agreement
-          <input type="checkbox" name="accept"
-          id="accept" required>
+          <input
+            type="checkbox"
+            name="accept"
+            id="accept"
+            required
+          >
         </lable>
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
-        <lable class="lable" for="email">
+        <lable
+          class="lable"
+          for="email"
+        >
           E-mail:
-          <input type="email" name="email"
-          id="email" placeholder="email@example.com"
-          required>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
         </lable>
-        <lable class="lable" for="password">
+        <lable
+          class="lable"
+          for="password"
+        >
           Password:
-          <input type="password" name="password"
-          id="password" minlength="5"
-          maxlength="25" required>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="25"
+            required
+          >
         </lable>
       </fieldset>
       <fieldset>
@@ -60,52 +112,102 @@
         <div class="lable">
           Do you love cats?
           <lable for="yes">
-            <input type="radio" name="like-cats"
-            id="yes" value="yes">
+            <input
+              type="radio"
+              name="like-cats"
+              id="yes"
+              value="yes"
+            >
             Yes
           </lable>
           <lable for="no">
-            <input type="radio" name="like-cats"
-            id="no" value="no">
+            <input
+              type="radio"
+              name="like-cats"
+              id="no"
+              value="no"
+            >
             No
           </lable>
         </div>
-        <label class="lable" for="color">
+        <label
+          class="lable"
+          for="color"
+        >
           What is your favorite color?
-          <input type="color" name="color"
-          id="color">
+          <input
+            type="color"
+            name="color"
+            id="color"
+          >
         </label>
-        <label class="lable" for="time">
+        <label
+          class="lable"
+          for="time"
+        >
           What time do you go to bed?
-          <input type="time" id="time"
-          name="time">
+          <input
+            type="time"
+            id="time"
+            name="time"
+          >
         </label>
-        <label class="lable" for="favorite-car">
+        <label
+          class="lable"
+          for="favorite-car"
+        >
           What are your favorite brand of cars?
-          <select name="cars" id="favorite-car"
-          size="4" multiple="">
+          <select
+            name="cars"
+            id="favorite-car"
+            size="4"
+            multiple=""
+          >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label class="lable" for="rate">
+        <label
+          class="lable"
+          for="rate"
+        >
           How do you rate our work?
-          <input type="range" id="rate"
-          name="rate" value="1">
+          <input
+            type="range"
+            id="rate"
+            name="rate"
+            value="1"
+          >
         </label>
       </fieldset>
       <fieldset>
         <legend>Additional info:</legend>
-        <label class="lable" for="comments">
+        <label
+          class="lable"
+          for="comments"
+        >
           Comments:
-          <textarea name="comments" id="comments"></textarea>
+          <textarea
+            name="comments"
+            id="comments"
+          >
+          </textarea>
         </label>
-        <label class="lable" for="recommend">
+        <label
+          class="lable"
+          for="recommend"
+        >
           Would you recommend us?
-          <select name="recommend" id="recommend">
-            <option value="Choose" selected=""
-            disabled="">
+          <select
+            name="recommend"
+            id="recommend"
+          >
+            <option
+              value="Choose"
+              selected=""
+              disabled=""
+            >
             Choose
             </option>
             <option value="yes">yes</option>
@@ -113,9 +215,11 @@
           </select>
         </label>
       </fieldset>
-      <button name="button" class="submit-button"
-      value="Submit" type="submit"
-      onsubmit="onSubmit()">
+      <button
+        class="submit-button"
+        type="submit"
+        onsubmit="onSubmit()"
+      >
         Submit
       </button>
     </form>
